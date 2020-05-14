@@ -10,5 +10,12 @@ I created an Excel plug-in that analyzes a spreadsheet containing all of the uns
 
 <h3>Some Implementation Details</h3>
 
-Initialize office-add-in as explained <a href="https://docs.microsoft.com/en-us/office/dev/add-ins/tutorials/excel-tutorial"> here </a>
+
+To create the script, I first had to initialize Office-Add-ins as explained <a href="https://docs.microsoft.com/en-us/office/dev/add-ins/tutorials/excel-tutorial"> here</a>.
+
+I reviewed my data source and determined that for each prospect, there are 24 data fields available. So, to use the tool I would either copy all 24 data points at once for each prospect from my data source or copy multiple groups of 24 at the same time.
+
+Once the script is run, the 4 key data points are extracted from each batch of 24 and then reinserted as 4 cells in a new row in the spreadsheet.
+
+
 
