@@ -13,13 +13,13 @@ Office.onReady(info => {
       console.log('Sorry. The tutorial add-in uses Excel.js APIs that are not available in your version of Office.');
     }
     // Assign event handlers and other initialization logic.
-    document.getElementById("create-table").onclick = createTable;
+    document.getElementById("create-table").onclick = reviewData;
     document.getElementById("app-body").style.display = "flex";
   }
 });
 
 
-function createTable() {
+function reviewData() {
   Excel.run(function(context) {
       var sheet = context.workbook.worksheets.getItem("Sample");
       var range = sheet.getRange("A1:A7392").load('values');
